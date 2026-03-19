@@ -2,9 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 import yt_dlp
-
-# TOKEN (Render environment variable se aayega)
-TOKEN = os.getenv("8717568709:AAHW7TlUz9MSYO4CdVtzBB2CV3oxxYz8Byk")
+TOKEN = "8717568709:AAHW7TlUz9MSYO4CdVtzBB2CV3oxxYz8Byk"
 # /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("👋 Send Instagram Reel link to download!")

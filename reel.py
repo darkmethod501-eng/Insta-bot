@@ -4,11 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 import yt_dlp
 
 # TOKEN (Render environment variable se aayega)
-TOKEN = os.getenv("8717568709:AAFuTOrie0E7v4QXX1BqE8F0d_bUnIn9upc")
-
-if not TOKEN:
-    raise ValueError("BOT_TOKEN not set! Check Render Environment Variables.")
-
+TOKEN = os.getenv("8717568709:AAHW7TlUz9MSYO4CdVtzBB2CV3oxxYz8Byk")
 # /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("👋 Send Instagram Reel link to download!")
